@@ -21,29 +21,3 @@ request('https://www.instagram.com/' + username + '/?__a=1', function (error, re
     console.log("Username not found.");
   }
 })
-
-/*
-
-// (@signature Integer String -> (listof String))
-// retrive follow list from user_id JSON data
-function getFollowList (type, user_id) {
-    options = {
-      userId: user_id,
-      list: type //1 for following, 2 for followers
-    }
-
-    var newWindow = window.open(`https://www.instagram.com/graphql/query/?query_hash=c76146de99bb02f6415203be841dd25a&variables=` + encodeURIComponent(JSON.stringify({
-      "id": options.userId,
-      "include_reel": true,
-      "fetch_mutual": true,
-      "first": 50
-  })), "_blank");
-
-    newWindow.document.createElement('script');
-    script.src = 'fetch-list.js';
-    newWindow.document.head.appendChild(script);
-}
-
-*/
-
-
